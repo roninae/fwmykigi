@@ -3,22 +3,13 @@ version: "0.1"
 author: Mohammed Makhlouf <m@ronin.ae>
 about: fabricate & generate events (logs, metrics, traces and transaction) by the bucket load.
 args:
-  - config:
+  - wasm:
       short: w
-      long: wasm-file
-      value_name: wasm-file
+      long: wasmfile
+      value_name: wasmfile
       help: wasm file to load
       takes_value: true
   - verbose:
       short: v
       multiple: true
       help: Sets the level of verbosity
-subcommands:
-  - fab:
-      about: Fabricate real events in the underlaying runtime
-      version: "0.1"
-      author: Mohammed Makhlouf <m@ronin.ae>
-      args:
-        - wasm-mold:
-            short: d
-            help: print debug information
