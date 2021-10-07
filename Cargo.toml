@@ -1,0 +1,11 @@
+[package]
+name = "fwmykigi"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tui = "0.16.0"
+clap = { version = "2.33.3", features = ["yaml"] }
+wasmer = "2.0"
